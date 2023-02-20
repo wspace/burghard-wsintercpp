@@ -5,9 +5,9 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <cstring>
 
 #include <assert.h>
-#include <typeinfo.h>
 
 using namespace std;
 
@@ -26,7 +26,7 @@ public:
 	{
 	}
 
-	virtual char* getName( ) = 0;
+	virtual const char* getName( ) = 0;
 
 	virtual void getRunInfo( ostream& out )
 	{
@@ -51,7 +51,7 @@ public:
 	}
 
 
-	virtual char* getSignature() = 0;
+	virtual const char* getSignature() = 0;
 
 	virtual bool read( string s, Op*& op, int& length ) = 0;
 };
@@ -164,14 +164,14 @@ public:
 void Op::putInHeap( Vm& vm, int i, int v )
 {
 	assert( i >= 0 );
-	vm.heap.resize( __max( vm.heap.size(), i + 1 ) );
+	vm.heap.resize( vm.heap.size() > i + 1 ? vm.heap.size() : i + 1 );
 	vm.heap[i] = v;
 }
 
 template< class Base >
 class OpTemplateClass: public OpClass
 {
-	virtual char* getSignature()
+	virtual const char* getSignature()
 	{
 		return Base::getSignature();
 	}

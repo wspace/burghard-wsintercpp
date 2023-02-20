@@ -87,7 +87,7 @@ SOURCE=.\inter.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Ops.h
+SOURCE=.\ops.h
 # End Source File
 # End Target
 # End Project

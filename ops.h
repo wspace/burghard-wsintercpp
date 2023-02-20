@@ -57,12 +57,12 @@ public:
 		}
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "aa";
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "push";
 	}
@@ -86,12 +86,12 @@ public:
 	{
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "acc";
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "pop";
 	}
@@ -149,12 +149,12 @@ public:
 		}
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "label";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "caa";
 	}
@@ -176,12 +176,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "doub";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "aca";
 	}
@@ -200,12 +200,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "swap";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "acb";
 	}
@@ -225,12 +225,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "add";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "baaa";
 	}
@@ -252,12 +252,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "sub";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "baab";
 	}
@@ -279,12 +279,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "mul";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "baac";
 	}
@@ -306,12 +306,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "div";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "baba";
 	}
@@ -333,12 +333,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "mod";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "babb";
 	}
@@ -360,12 +360,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "store";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bba";
 	}
@@ -391,12 +391,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "retrive";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bbb";
 	}
@@ -419,14 +419,14 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "call";
 	}
 
 	virtual bool isLabel() { return false; };
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "cab";
 	}
@@ -449,14 +449,14 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "jump";
 	}
 
 	virtual bool isLabel() { return false; };
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "cac";
 	}
@@ -476,14 +476,14 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "jumpz";
 	}
 
 	virtual bool isLabel() { return false; };
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "cba";
 	}
@@ -508,14 +508,14 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "jumpn";
 	}
 
 	virtual bool isLabel() { return false; };
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "cbb";
 	}
@@ -539,12 +539,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "ret";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "cbc";
 	}
@@ -567,12 +567,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "exit";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "ccc";
 	}
@@ -590,12 +590,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "outc";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bcaa";
 	}
@@ -615,12 +615,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "outn";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bcab";
 	}
@@ -640,12 +640,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "inc";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bcba";
 	}
@@ -668,12 +668,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "inn";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "bcbb";
 	}
@@ -695,12 +695,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "debugprintstack";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "ccaaa";
 	}
@@ -727,12 +727,12 @@ public:
 	{
 	}
 
-	virtual char* getName( )
+	virtual const char* getName( )
 	{
 		return "debugprintheap";
 	}
 
-	static char* getSignature()
+	static const char* getSignature()
 	{
 		return "ccaab";
 	}
